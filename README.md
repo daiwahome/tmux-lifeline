@@ -15,7 +15,7 @@ and hit `prefix + I`.
 ## Usage
 Set colorscheme in `.tmux.conf`:
 ```
-set -g @lifeline_solorscheme 'molokai'
+set -g @lifeline_colorscheme 'molokai'
 ```
 
 [tpm]: https://github.com/tmux-plugins/tpm
