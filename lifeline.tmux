@@ -34,32 +34,25 @@ set_tmux_option 'status-justify' 'left'
 set_tmux_option 'status-left-length' '8'
 set_tmux_option 'status-right-length' '50'
 ## color
-set_tmux_option 'status-bg' "$black"
-set_tmux_option 'status-fg' "$white"
+set_tmux_option 'status-style' "bg=$black,fg=$white"
 ## status-left
 set_tmux_option 'status-left' '#{mode}'
 ## status-right
-set_tmux_option 'status-right-bg' "$black"
-set_tmux_option 'status-right-fg' "$yellow"
 set_tmux_option 'status-right' "#(whoami)@#H #[fg=$black,bg=$magenta] %a %d-%b-%Y #[fg=$magenta,bg=$black] %H:%M:%S "
+set_tmux_option 'status-right-style' "bg=$black,fg=$yellow"
 ## window status
-set_tmux_option 'window-status-bg' "$black"
-set_tmux_option 'window-status-fg' "$white"
 set_tmux_option 'window-status-format' ' #I:#W '
-set_tmux_option 'window-status-current-bg' "$black"
-set_tmux_option 'window-status-current-fg' "$yellow"
+set_tmux_option 'window-status-style' "bg=$black,fg=$white"
 set_tmux_option 'window-status-current-format' ' #I:#W '
+set_tmux_option 'window-status-current-style' "bg=$black,fg=$yellow"
 set_tmux_option 'window-status-separator' '|'
 ## command line
-set_tmux_option 'message-bg' "$yellow"
-set_tmux_option 'message-fg' "$black"
+set_tmux_option 'message-style' "bg=$yellow,fg=$black"
 
 # Pane
 ## border
-set_tmux_option 'pane-border-bg' "$black"
-set_tmux_option 'pane-border-fg' "$white"
-set_tmux_option 'pane-active-border-bg' "$black"
-set_tmux_option 'pane-active-border-fg' "$yellow"
+set_tmux_option 'pane-border-style' "bg=$black,fg=$white"
+set_tmux_option 'pane-active-border-style' "bg=$black,fg=$yellow"
 ## number
 set_tmux_option 'display-panes-colour' "$white"
 set_tmux_option 'display-panes-active-colour' "$yellow"
